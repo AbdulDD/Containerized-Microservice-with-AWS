@@ -1,4 +1,4 @@
-name: CI pipeline testing
+name: Sentiment Analysis Module Test
 
 on:
   push:
