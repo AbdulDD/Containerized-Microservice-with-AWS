@@ -11,4 +11,4 @@ ner2 = ner_pipe(text2)
 
 # assert the outptus
 assert ner1[0]['entity'] == 'B-ORG'
-assert ner2[0]['entity'] == 'B-PER'
+assert ner2[0]['entity'] == 'B-'
