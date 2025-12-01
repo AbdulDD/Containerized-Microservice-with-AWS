@@ -1,4 +1,4 @@
-name: Sentiment Analysis Module Test
+name: COntinuous Integration Test
 
 on:
   push:
