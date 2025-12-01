@@ -9,7 +9,11 @@ test:
 
 # Format code
 format:
-	black
+	black .
 
-# Run everything
-all: install format test
+# Lint code
+lint:
+	flake8 . --exclude=.venv,__pycache__,build,dist
+
+# Run everything: install, format, lint, test
+all: install format lint test

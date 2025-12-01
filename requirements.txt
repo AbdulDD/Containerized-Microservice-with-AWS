@@ -1,3 +1,6 @@
 torch==2.9.0 --index-url https://download.pytorch.org/whl/cpu
 transformers==4.57.2
+pylint==3.2.3
+black
 pytest==9.0.1
+Flask==3.1.2

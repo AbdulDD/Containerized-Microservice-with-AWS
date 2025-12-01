@@ -1,7 +1,8 @@
-import pytest
+# Imports
 from utils.ner_detector import ner_pipe
 
 
+# Test function
 def test_ner_detector():
     # test samples
     text1 = "Microsoft"
@@ -12,5 +13,5 @@ def test_ner_detector():
     ner2 = ner_pipe(text2)
 
     # assert the outptus
-    assert ner1[0]['entity'] == 'B-ORG'
-    assert ner2[0]['entity'] == 'B-PER'
+    assert ner1[0]["entity"] == "B-ORG"
+    assert ner2[0]["entity"] == "B-PER"
