@@ -1,7 +1,7 @@
 # Install dependencies
 install:
 	pip install --upgrade pip 
-	pip install -r requirements.txt
+	pip install --no-cache-dir -r requirements.txt
 
 # Run tests
 test:
