@@ -13,4 +13,4 @@ def test_ner_detector():
 
     # assert the outptus
     assert ner1[0]['entity'] == 'B-ORG'
-    assert ner2[0]['entity'] == 'B-'
+    assert ner2[0]['entity'] == 'B-PER'
