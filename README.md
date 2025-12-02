@@ -38,15 +38,11 @@ docker build -t containerized-microservice:latest .
 docker run -it -p 5000:5000 containerized-microservice:latest
 ```
 
-3. Test the Endpoints
-
-  NER Endpoint
+3. Test the Endpoints (NER & Sentiment)
 
 ```bash
 curl -X POST http://localhost:5000/ner -H 'Content-Type: application/json' -d '{"text": "Meta is a tech giant"}'
 ```
-
-  Sentiment Endpoint
 
 ```bash
 curl -X POST http://localhost:5000/sentiment -H 'Content-Type: application/json' -d '{"text": "I love mathematics"}'
