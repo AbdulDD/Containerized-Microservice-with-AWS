@@ -1,24 +1,20 @@
-# Use a small, stable Python base
-FROM python:3.10-slim
+# Base image
+FROM python:3.12-slim
 
-# Prevent Python from writing .pyc files and buffering logs
-ENV PYTHONDONTWRITEBYTECODE=1
-ENV PYTHONUNBUFFERED=1
-
-# Create app directory
+# Set working directory inside container
 WORKDIR /app
 
-# Copy only requirements first for build caching
+# Copy requirements
 COPY requirements.txt .
 
-# Install dependencies (no pip cache to save space)
+# Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application code
+# Copy entire project
 COPY . .
 
-# Expose port the app listens on
-EXPOSE 8080
+# Expose Flask port
+EXPOSE 5000
 
-# Default command to run the Flask app
-CMD ["python", "main.py"]
+# Run Flask app (adjust path to utils/app.py)
+CMD ["python", "app.py"]

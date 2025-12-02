@@ -1,0 +1,16 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.cache/
+.ipynb_checkpoints/
+experiments/
+.git/
+.gitignore
+.DS_Store
+*.model
+*.bin
+*.pt
+*/__pycache__/
